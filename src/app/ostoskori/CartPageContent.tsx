@@ -144,7 +144,7 @@ export default function CartPageContent() {
                         <div className={styles.itemTop}>
                           <div>
                             <p className={styles.itemName}>{product.name}</p>
-                            <p className={styles.itemSub}>{product.subtitle} · {product.unit}</p>
+                            <p className={styles.itemSub}>{product.subtitle}</p>
                           </div>
                           <button
                             className={styles.removeBtn}
