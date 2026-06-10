@@ -1,0 +1,126 @@
+.card {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(65,34,7,.07);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(65,34,7,.13);
+}
+
+.badge {
+  position: absolute;
+  top: .75rem;
+  left: .75rem;
+  z-index: 1;
+  background: var(--gold);
+  color: var(--brown);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .72rem;
+  padding: .2rem .65rem;
+  border-radius: var(--radius-full);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.badgeOut {
+  background: #e0e0e0;
+  color: #777;
+}
+
+.imageWrap {
+  display: block;
+  background: var(--gold-light);
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.imageWrap:hover .image { transform: scale(1.05); }
+
+.body {
+  padding: 1rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.category {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+  margin-bottom: .25rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--brown);
+  margin-bottom: .1rem;
+}
+
+.subtitle {
+  font-size: .82rem;
+  color: var(--color-text-muted);
+  margin-bottom: .5rem;
+}
+
+.desc {
+  font-size: .85rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: .2rem;
+}
+
+.amount {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--brown);
+}
+
+.unit {
+  font-size: .78rem;
+  color: var(--color-text-muted);
+}
+
+.addBtn {
+  font-size: .82rem;
+  padding: .55rem 1rem;
+}
+
+.addBtn:disabled {
+  background: #d9d9d9;
+  color: #999;
+  box-shadow: none;
+  cursor: default;
+}

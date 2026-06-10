@@ -1,0 +1,134 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--brown);
+  box-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--gold);
+  letter-spacing: -.5px;
+}
+
+.logoSub {
+  font-size: .7rem;
+  color: rgba(255,255,255,.55);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.nav a {
+  color: rgba(255,255,255,.85);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: .02em;
+  transition: color .15s;
+}
+
+.nav a:hover { color: var(--gold); }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.cartBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  color: var(--white);
+  padding: .4rem .75rem;
+  border-radius: var(--radius-full);
+  background: rgba(255,255,255,.1);
+  transition: background .15s;
+}
+.cartBtn:hover { background: rgba(255,255,255,.2); }
+
+.cartBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--gold);
+  color: var(--brown);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .7rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartTotal {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: .85rem;
+  color: var(--gold);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  padding: .3rem;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  background: var(--brown-mid);
+  padding: .5rem 1.25rem 1rem;
+  gap: .1rem;
+}
+
+.mobileMenu a {
+  color: rgba(255,255,255,.9);
+  font-family: var(--font-display);
+  font-weight: 600;
+  padding: .6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  font-size: 1rem;
+}
+
+@media (max-width: 720px) {
+  .nav { display: none; }
+  .hamburger { display: flex; }
+  .cartTotal { display: none; }
+}
