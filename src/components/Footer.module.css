@@ -44,7 +44,7 @@
   color: rgba(255,255,255,.7);
   transition: color .15s;
 }
-.linkList a:hover {:hover { color: var(--gold); }
+.linkList a:hover { color: var(--gold); }
 
 .newsletterText { font-size: .85rem; margin-bottom: .75rem; line-height: 1.5; }
 
