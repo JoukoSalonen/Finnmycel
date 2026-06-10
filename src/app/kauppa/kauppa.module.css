@@ -1,0 +1,48 @@
+.header {
+  background: var(--brown);
+  padding: 2.5rem 0 2rem;
+  color: var(--white);
+}
+
+.header h1 {
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: .4rem;
+}
+
+.header p { color: rgba(255,255,255,.7); font-size: .95rem; }
+
+.shop { padding: 2.5rem 0 4rem; }
+
+.filters {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filterPill {
+  padding: .4rem 1.1rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: .82rem;
+  cursor: pointer;
+  border: 1.5px solid var(--brown);
+  color: var(--brown);
+  transition: background .15s, color .15s;
+}
+
+.filterPill:hover, .active {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 860px) { .grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
